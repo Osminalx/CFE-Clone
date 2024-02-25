@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+/* Estilos para el encabezado */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.service {
+    border: 3px solid hsl(0, 0%, 88%);
+    border-radius: 5px;
+}
+
+#menu-toggle {
+    background-color: #00905f;
+    color: white;
+    border: #00905f;
+    border-radius: 50%;
+}
+
+/* Estilos para el menú lateral */
+#sidebar {
+    position: fixed;
+    right: -250px; /* Oculta el menú lateral fuera de la pantalla */
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f9f9f9;
+    z-index: 1000;
+    overflow-x: hidden;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar > ul {
+    list-style-type: none;
+    padding: 25px;
+    height: 100%; /* Ajustar la altura al 100% */
+}
+
+#sidebar > ul > li {
+    border-bottom: solid 5px #f9f9f9; /* Aplica el borde al li directamente */
+}
+
+#sidebar svg {
+    color: #00905f;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para el contenido principal */
+#main-content {
+    transition: margin-right 0.3s ease;
+    margin-right: 0;
+}
+
+/* Estilos para el botón de la hamburguesa */
+#menu-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Estilos para el artículo */
+.recibo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #9d9da8; /* Borde ligero */
+    border-radius: 5px;
+}
+
+.recibo p {
+    margin-bottom: 10px;
+    color: #9d9da8;
+}
+
+.estado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.estado p {
+    margin-bottom: 0;
+}
+
+.estado .paid {
+    color: #00905f;
+}
+
+.recibo b {
+    color: black; /* Color verde para el texto en negrita */
+}
+
+.paid {
+    color: #00905f !important; /* Color verde para el estado de pago */
+}
+
+/* Estilos para el ícono del recibo */
+.reciboIcon {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reciboIcon a {
+    color: #00905f;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Estilos para el ícono dentro del círculo */
+.reciboIcon .icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #00905f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    z-index: 999; /* Asegura que el footer esté por encima de otros elementos */
+    overflow: hidden; /* Deshabilita el desplazamiento */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+footer ul li a {
+    color: gray;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer ul li a.active {
+    color: #00905f;
+    background-color: #f9f9f9;
+}
+
+footer ul li a svg {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,99 @@
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mainImg {
+    width: 25vw; /* 25% del ancho de la pantalla */
+    margin-bottom: 20px;
+}
+
+.inputs input[type='email'],
+.inputs input[type='password'] {
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #00905f;
+    color: #00905f; /* Color del texto */
+    background-color: white; /* Color de fondo */
+}
+.inputs a {
+    display: inline-block;
+    padding: 10px 20px; /* Padding interno */
+    background-color: #00905f; /* Color de fondo verde */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Quitar subrayado */
+    border-radius: 10px; /* Radio del borde */
+    margin-top: 10px; /* Espacio superior */
+}
+
+.inputs a:hover {
+    background-color: #007f56; /* Cambiar color de fondo al pasar el mouse */
+}
+
+a {
+    color: #00905f;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.FingerPrint {
+    max-width: 100px; /* ajusta el tamaño aquí */
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre las imágenes y el texto */
+}
+
+.apple,
+.google {
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.apple img,
+.google img {
+    border-radius: 50%;
+    width: 50px; /* Tamaño de las imágenes */
+    height: 50px;
+}
+
+.register p {
+    color: black;
+}

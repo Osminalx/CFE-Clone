@@ -1,0 +1,229 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.status {
+    display: flex;
+}
+
+.statusPaid {
+    color: #00905f;
+}
+
+.service {
+    border: 3px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+#menu-toggle {
+    background-color: #00905f;
+    color: white;
+    border: #00905f;
+    border-radius: 50%;
+}
+
+/* Estilos para el menú lateral */
+#sidebar {
+    position: fixed;
+    right: -250px; /* Oculta el menú lateral fuera de la pantalla */
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #f9f9f9;
+    z-index: 1000;
+    overflow-x: hidden;
+    transition: right 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar > ul {
+    list-style-type: none;
+    padding: 25px;
+    height: 100%; /* Ajustar la altura al 100% */
+}
+
+#sidebar > ul > li {
+    border-bottom: solid 5px #f9f9f9; /* Aplica el borde al li directamente */
+}
+
+#sidebar svg {
+    color: #00905f;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para el contenido principal */
+#main-content {
+    transition: margin-right 0.3s ease;
+    margin-right: 0;
+}
+
+/* Estilos para el botón de la hamburguesa */
+#menu-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+/* Estilos para el artículo */
+article {
+    padding: 20px;
+}
+
+/* Estilos para las secciones dentro del artículo */
+.period,
+.date,
+.status {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el div de saldo */
+.saldo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.saldo img {
+    width: 100%;
+    margin-top: 10px;
+    height: auto; /* Para mantener la proporción de la imagen */
+}
+
+.pay {
+    background-color: #00905f;
+    color: white;
+    border: none;
+    padding: 10px 0; /* Ajustar el padding para que el botón tenga la misma altura que la imagen de la barra */
+    width: 100%; /* Hacer que el botón tenga el mismo ancho que la imagen de la barra */
+    border-radius: 5px;
+    cursor: not-allowed; /* Cambiar el cursor cuando el botón esté deshabilitado */
+}
+
+.pay:disabled {
+    cursor: not-allowed;
+}
+
+.saldo h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.saldo img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilos para el botón de pagar */
+.pay {
+    background-color: #00905f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pay:hover {
+    background-color: #007f56;
+}
+
+/* Estilos para el div de simulación */
+.simul {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el ícono */
+.simul .icon-circle {
+    display: inline-flex; /* Cambiar a inline-flex para que el círculo y el ícono estén en línea */
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #00905f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    color: white;
+}
+
+/* Estilos para el enlace "Simula tu consumo" */
+.simul a {
+    color: #00905f;
+    text-decoration: none;
+    display: inline-flex; /* Cambiar a inline-flex para que el ícono y el texto estén en línea */
+    align-items: center; /* Centrar verticalmente el ícono y el texto */
+    margin-top: 10px; /* Añadir margen superior para separar del contenido superior */
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    padding: 10px;
+    z-index: 999; /* Asegura que el footer esté por encima de otros elementos */
+    overflow: hidden; /* Deshabilita el desplazamiento */
+}
+
+/* Estilos para el footer */
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias líneas */
+}
+
+footer ul li {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Añadir margen inferior para separar los elementos verticalmente */
+    text-align: center; /* Centrar el texto */
+}
+
+footer ul li a {
+    color: gray;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer ul li a.active {
+    color: #00905f;
+    background-color: #f9f9f9;
+}
+
+footer ul li a svg {
+    display: block; /* Mostrar el ícono como bloque para poder colocarlo arriba del texto */
+    margin: auto; /* Centrar el ícono horizontalmente */
+    margin-bottom: 5px; /* Añadir espacio entre el ícono y el texto */
+}
